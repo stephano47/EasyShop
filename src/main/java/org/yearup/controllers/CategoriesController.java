@@ -1,8 +1,10 @@
 package org.yearup.controllers;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.server.ResponseStatusException;
 import org.yearup.data.CategoryDao;
 import org.yearup.data.ProductDao;
 import org.yearup.models.Category;
@@ -26,14 +28,30 @@ public class CategoriesController
     public List<Category> getAll()
     {
         // find and return all categories
-        return null;
+        try {
+            return categoryDao.getAllCategories();
+        }
+        catch (Exception ex) {
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
+        }
     }
 
     // add the appropriate annotation for a get action
     public Category getById(@PathVariable int id)
     {
         // get the category by id
-        return null;
+        try {
+        Category category = categoryDao.getById(id);
+
+        if (category == null) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Category not found.");
+        }
+        return category;
+
+        }
+        catch (Exception ex) {
+        throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
+        }
     }
 
     // the url to return all products in category 1 would look like this
