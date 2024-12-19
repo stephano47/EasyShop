@@ -25,8 +25,8 @@ public class Product
         this.price = price;
         this.categoryId = categoryId;
         this.description = description;
-        this.color = color;
         this.stock = stock;
+        this.color = color;
         this.isFeatured = isFeatured;
         this.imageUrl = imageUrl;
     }
