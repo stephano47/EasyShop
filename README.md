@@ -1,15 +1,15 @@
-# EasyShop
+![EasyShop](https://github.com/stephano47/EasyShop/blob/main/src/photos/Screenshot%202024-12-19%20134111.png?raw=true)
+## Version 2 Update - Year Up Capstone 3
 # ____________________
 
-I have been assigned to update an existing e-commerce application implementing new methods and fixing bugs reported by the users of the application.
- 
+**I have been tasked with updating the EasyShop e-commerce platform by fixing reported bugs and implementing updates to ensure a smoother and more efficient shopping experience for users.**
 
-## Features:
 # ____________________
 
 ## Bug Fixes:
 ### Search Function:
-You may have noticed that the product search was returning incorrect results. We've fixed this issue, so you should now get the correct products when searching.
+While reviewing the reported bugs, I noticed that the product search was returning incorrect results. I’ve addressed this issue, and you should now see accurate results when searching.
+![searchFunction](https://github.com/stephano47/EasyShop/blob/main/src/photos/Screenshot%202024-12-20%20031403.png?raw=true)
 
 ### Duplication of Items:
 Some products were appearing duplicated with only minimal differences. This was due to the method using create instead of update.
@@ -36,9 +36,7 @@ Some products were appearing duplicated with only minimal differences. This was 
 **Instillation:**
 * Clone the Repository
 
-     git clone <repository-url>
-
-
+git clone <repository-url>
 * Open EasyShopApplication.java and Run the program
 * Go into any browser of your choice and enter localhost:8080
 
