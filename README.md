@@ -9,7 +9,7 @@
 ## Bug Fixes:
 ### Search Function:
 While reviewing the reported bugs, I noticed that the product search was returning incorrect results. I’ve addressed this issue, and you should now see accurate results when searching.
-![searchFunction](https://github.com/stephano47/EasyShop/blob/main/src/photos/Screenshot%202024-12-20%20031403.png?raw=true)
+![searchFunction](https://github.com/stephano47/EasyShop/blob/main/src/photos/Screenshot%202024-12-20%20142440.png?raw=true)
 
 ### Duplication of Items:
 Some products were appearing duplicated with only minimal differences. This was due to the method using create instead of update.
